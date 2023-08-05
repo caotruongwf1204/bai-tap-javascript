@@ -13,18 +13,18 @@ const arrEle = (arr) => {
 
     return arrEle;
 
-    // tính tổng của các số chẵn
-    const sumNumber = (arr) => {
-        let sum = 0;
+}
+// tính tổng của các số chẵn
+let sumNumber = (arr) => {
+    let sum = 0;
 
-        for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
             sum += arr[i];
-            if (arr[i] % 2 === 0) {
-            }
         }
-
-        return sum;
     }
+
+    return sum;
 }
 const numbers = [4, 2, 9, 7, 5, 8];
 console.log(arrEle(numbers));
